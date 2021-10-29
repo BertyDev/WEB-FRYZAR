@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>FRY-ZAR | Servicio Tecnico de Aireacondicionado</title>
+  <meta name="description" content="Servicio tecnico de aire acondicionados" />
+  <meta name="keywords" content="servicio tecnico, aire acondicionado, zona norte, caba, " />
+  <meta name="author" content="BertyDev" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./asset/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="leading-normal  tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+  <!--Inicio Nav-->
+  <nav id="header" class="fixed w-full z-30 top-0 text-white">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2 lg:py-0">
+      <div class="pl-4 flex items-center">
+        <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
+          <svg class="fill-current inline-block h-10 w-10 mr-2" aria-hidden="true" focusable="false" data-prefix="far"
+            data-icon="snowflake" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+            class="svg-inline--fa fa-snowflake fa-w-14 fa-8x">
+            <path fill="currentColor"
+              d="M440.1 355.2l-39.2-23 34.1-9.3c8.4-2.3 13.4-11.1 11.1-19.6l-4.1-15.5c-2.2-8.5-10.9-13.6-19.3-11.3L343 298.2 271.2 256l71.9-42.2 79.7 21.7c8.4 2.3 17-2.8 19.3-11.3l4.1-15.5c2.2-8.5-2.7-17.3-11.1-19.6l-34.1-9.3 39.2-23c7.5-4.4 10.1-14.2 5.8-21.9l-7.9-13.9c-4.3-7.7-14-10.3-21.5-5.9l-39.2 23 9.1-34.7c2.2-8.5-2.7-17.3-11.1-19.6l-15.2-4.1c-8.4-2.3-17 2.8-19.3 11.3l-21.3 81-71.9 42.2v-84.5L306 70.4c6.1-6.2 6.1-16.4 0-22.6l-11.1-11.3c-6.1-6.2-16.1-6.2-22.2 0l-24.9 25.4V16c0-8.8-7-16-15.7-16h-15.7c-8.7 0-15.7 7.2-15.7 16v46.1l-24.9-25.4c-6.1-6.2-16.1-6.2-22.2 0L142.1 48c-6.1 6.2-6.1 16.4 0 22.6l58.3 59.3v84.5l-71.9-42.2-21.3-81c-2.2-8.5-10.9-13.6-19.3-11.3L72.7 84c-8.4 2.3-13.4 11.1-11.1 19.6l9.1 34.7-39.2-23c-7.5-4.4-17.1-1.8-21.5 5.9l-7.9 13.9c-4.3 7.7-1.8 17.4 5.8 21.9l39.2 23-34.1 9.1c-8.4 2.3-13.4 11.1-11.1 19.6L6 224.2c2.2 8.5 10.9 13.6 19.3 11.3l79.7-21.7 71.9 42.2-71.9 42.2-79.7-21.7c-8.4-2.3-17 2.8-19.3 11.3l-4.1 15.5c-2.2 8.5 2.7 17.3 11.1 19.6l34.1 9.3-39.2 23c-7.5 4.4-10.1 14.2-5.8 21.9L10 391c4.3 7.7 14 10.3 21.5 5.9l39.2-23-9.1 34.7c-2.2 8.5 2.7 17.3 11.1 19.6l15.2 4.1c8.4 2.3 17-2.8 19.3-11.3l21.3-81 71.9-42.2v84.5l-58.3 59.3c-6.1 6.2-6.1 16.4 0 22.6l11.1 11.3c6.1 6.2 16.1 6.2 22.2 0l24.9-25.4V496c0 8.8 7 16 15.7 16h15.7c8.7 0 15.7-7.2 15.7-16v-46.1l24.9 25.4c6.1 6.2 16.1 6.2 22.2 0l11.1-11.3c6.1-6.2 6.1-16.4 0-22.6l-58.3-59.3v-84.5l71.9 42.2 21.3 81c2.2 8.5 10.9 13.6 19.3 11.3L375 428c8.4-2.3 13.4-11.1 11.1-19.6l-9.1-34.7 39.2 23c7.5 4.4 17.1 1.8 21.5-5.9l7.9-13.9c4.6-7.5 2.1-17.3-5.5-21.7z"
+              class=""></path>
+          </svg>
+          FRY-ZAR
+        </a>
+      </div>
+      <div class="block  lg:hidden pr-4">
+        <button id="nav-toggle"
+          class="flex items-center p-1 text-gray-700 hover:text-gray-600 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="w-full rounded-lg flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 mx-2 lg:mt-0 bg-white lg:bg-transparent text-black p-6 lg:p-0 z-20"
+        id="nav-content">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center my-4">
+          <li class="mr-3">
+            <a class="nav-link-active" id="nav-link" onclick="activeLink(this)" href="#">Inicio</a>
+          </li>
+          <li class="mr-3">
+            <a class="" id="nav-link" onclick="activeLink(this)" href="#servicios">Servicios</a>
+          </li>
+          <li class="mr-3">
+            <a class="" id="nav-link" onclick="activeLink(this)" href="#nosotros">Nosotros</a>
+          </li>
+          <li class="mr-3">
+            <a class="" id="nav-link" onclick="activeLink(this)" href="#abonos">Abonos</a>
+          </li>
+        </ul>
+        <a id="navAction" href="#contacto" class="mx-auto lg:mx-0 justify-end  items-center hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow  
+          focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          Contacto
+        </a>
+      </div>
+    </div>
+    <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+  </nav>
+  <!--Fin Nav-->
+  <!--Inicio Portada-->
+  <div class="pt-24">
+    <div class="container px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <!--Columna Izquierda-->
+      <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
+        <p class="uppercase tracking-loose w-full">¿Estas Buscando un tecnico especializado?</p>
+        <h1 class="my-4 text-5xl font-bold leading-tight w-full">
+          FRI-ZAR - Servicios
+        </h1>
+        <p class="leading-normal text-2xl mb-8">
+          La solución a tus problemas!, mas de 30 años en el Rubro lo certifican.
+        </p>
+        <a href="#contacto"
+          class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          Contactanos
+        </a>
+      </div>
+      <!--Columna Derecha-->
+      <div class="w-full md:w-2/5 py-6 text-center">
+        <img class="w-full md:w-4/5 z-50" src="./asset/img/Principal.png" />
+      </div>
+    </div>
+  </div>
+  <!--Fin Portada-->
+  <!--Inicio Ondulaciones-->
+  <div class="relative -mt-12 lg:-mt-24">
+    <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+          <path
+            d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+            opacity="0.100000001"></path>
+          <path
+            d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+            opacity="0.100000001"></path>
+          <path
+            d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+            id="Path-4" opacity="0.200000003"></path>
+        </g>
+        <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+          <path
+            d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
+          </path>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <!--Fin Ondulaciones-->
+  <!--Inicio Servicios-->
+  <section id="servicios" class="bg-white border-b py-8">
+    <div class="container  mx-auto m-8">
+      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+        Servicios
+      </h1>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <div class="flex flex-wrap">
+        <div class="w-5/6 sm:w-1/2 p-6">
+          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+            Mantenimiento
+          </h3>
+          <p class="text-gray-600 mb-8">
+            ¿Porque esperar a tener un problema?, Ofrecemos Abono de mantenimiento de aires acondicionados tipo split,
+            enfriadoras de liquido y centrales.
+
+          </p>
+        </div>
+        <div class="w-full sm:w-1/2 px-6">
+
+          <img class=" object-cover sm:h-96 mx-auto" src="/asset/img/Mantenimiento.png" alt="Imagen Mantenimiento">
+        </div>
+      </div>
+      <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+        <div class="w-full sm:w-1/2 px-6">
+
+          <img class=" object-cover sm:h-96 mx-auto" src="/asset/img/Servi-Tecnico.png" alt="Imagen Servicio Tecnico">
+        </div>
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+          <div class="align-middle">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Servicio técnico
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Reparación de aire acondicionado central y split, servicio técnico en el día en Capital Federal y GBA.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap">
+        <div class="w-5/6 sm:w-1/2 p-6">
+          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+            Instalaciones
+          </h3>
+          <p class="text-gray-600 mb-8">
+            Instalación de equipos de aire acondicionado split y central.
+
+          </p>
+        </div>
+        <div class="w-full sm:w-1/2 px-6">
+
+          <img class=" object-cover sm:h-96 mx-auto" src="/asset/img/Instalacion.png" alt="Imagen Instalacion">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fin Servicios-->
+  <!--Inicio nosotros-->
+  <section id="nosotros" class="bg-white border-b py-8">
+    <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+        Nosotros
+      </h1>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <div class="container px-5 py-6 mx-auto">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8"
+            viewBox="0 0 975.036 975.036">
+            <path
+              d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+            </path>
+          </svg>
+          <p class="leading-relaxed text-lg text-gray-700"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Corporis, nulla iste eius fuga quos quasi perferendis atque veritatis est eveniet nesciunt esse id natus
+            aspernatur sequi asperiores dolorum tenetur suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Porro, eius? Sit est ducimus eius dolor autem officia in, ab cupiditate soluta libero aut tempora, at
+            eveniet. Amet quae praesentium non!</p>
+          <span class="inline-block h-1 w-10 rounded gradient mt-8 mb-6"></span><br>
+          <img alt="testimonial"
+            class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+            src="./asset/img/Guillermo-Zarza-Tecnico.png">
+          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">ZARZA GUILLERMO</h2>
+          <p class="text-gray-500">Técnico Superior en Refrigeracion</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fin nosotros-->
+  <!--Inicio abonos-->
+  <section id="abonos" class="bg-gray-100 py-8">
+    <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+        Abonos
+      </h1>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <div class="flex flex-col md:flex-row justify-center pt-12 my-12 md:my-4 gap-6">
+        <div
+          class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4 transition duration-700 ease-in-out transform  hover:scale-110 hover:z-10">
+          <div class="flex-1 bg-white  rounded-t rounded-b-none overflow-hidden shadow">
+            <div class="p-8 text-3xl font-bold text-center">
+              Intermedio (6 meses)
+            </div>
+            <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
+            <ul class="w-full text-center text-base">
+              <li class="border-b py-4">Atencion en 3 dias</li>
+              <li class="border-b py-4">Maximo de 5 Aires Acondicionados</li>
+              <li class="border-b py-4">Maximo 2 Carga Mensuales</li>
+            </ul>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="w-full pt-6 text-3xl  font-bold text-center">
+              $18.000
+              <span class="text-base">/ Por Cliente</span>
+            </div>
+            <div class="flex items-center justify-center">
+              <a href="#contacto"
+                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                toma contacto
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col w-5/6 lg:w-1/4 mx-auto hover:font-bold lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4 transition delay-150 duration-700 ease-in-out transform  hover:scale-110 hover:z-10">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <div class="w-full p-8 text-3xl font-bold text-center">Basico (3 meses)</div>
+            <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
+            <ul class="w-full text-center text-base ">
+              <li class="border-b py-4">Atencion en la semana</li>
+              <li class="border-b py-4">Maximo de 3 Aires Acondicionados</li>
+              <li class="border-b py-4">Maximo 1 Carga Mensual</li>
+
+            </ul>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="w-full pt-6 text-4xl font-bold text-center">
+              $ 10.000
+              <span class="text-base">/ Por Cliente</span>
+            </div>
+            <div class="flex items-center justify-center">
+              <a href="#contacto"
+                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                toma contacto
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4 transition duration-700 ease-in-out transform  hover:scale-110 hover:z-10">
+          <div class="flex-1 bg-white  rounded-t rounded-b-none overflow-hidden shadow">
+            <div class="p-8 text-3xl font-bold text-center ">
+              Avanzado (1 año)
+            </div>
+            <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
+            <ul class="w-full text-center text-base">
+              <li class="border-b py-4">Atencion en el día</li>
+              <li class="border-b py-4">Maximo de 10 Aires Acondicionados</li>
+              <li class="border-b py-4">Maximo 3 Carga Mensuales</li>
+            </ul>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="w-full pt-6 text-3xl  font-bold text-center">
+              $32.000
+              <span class="text-base">/ Por Cliente</span>
+            </div>
+            <div class="flex items-center justify-center">
+              <a href="#contacto"
+                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                toma contacto
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fin abonos-->
+  <!--Inicio ondulaciones-->
+  <svg id="contacto" class="wave-top " viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+        <g class="wave" fill="#f8fafc">
+          <path
+            d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z">
+          </path>
+        </g>
+        <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+          <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+            <path
+              d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+              opacity="0.100000001"></path>
+            <path
+              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+              opacity="0.100000001"></path>
+            <path
+              d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+              opacity="0.200000003"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <!--Fin ondulaciones-->
+  <!--Inicio contacto-->
+  <section class="container mx-auto text-center py-6 mb-12">
+    <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+      Contacto
+    </h1>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+    </div>
+    <h3 class="my-4 text-2xl leading-tight">
+      Envianos un mensaje y te responderemos a la brevedad
+    </h3>
+    <form action="send-mail.php" method="post">
+      <div class="container px-5 pt-12 mx-auto">
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-full lg:w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-white">Nombre</label>
+                <input type="text" id="name" name="name" required placeholder="Ingrese su Nombre"
+                  class="w-full bg-gray-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-full lg:w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-white">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Ingrese su Email"
+                  class="w-full bg-gray-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-white">Mensaje</label>
+                <textarea id="message" name="message" type="text" required placeholder="Ingrese su Mensaje"
+                  class="w-full bg-gray-50  rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <button type="submit"
+                class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Enviar
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+  <!--Fin contacto-->
+  <!--Inicio Footer-->
+  <footer class="bg-white">
+    <div class="container mx-auto px-8">
+      <div class="w-full flex flex-col md:flex-row pt-6 text-center md:text-left">
+        <div class="flex-1 mb-6 mr-6 text-black">
+          <a class="text-blue-800 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <svg class="fill-current inline-block h-10 w-10 mr-2" aria-hidden="true" focusable="false" data-prefix="far"
+              data-icon="snowflake" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+              class="svg-inline--fa fa-snowflake fa-w-14 fa-8x">
+              <path fill="currentColor"
+                d="M440.1 355.2l-39.2-23 34.1-9.3c8.4-2.3 13.4-11.1 11.1-19.6l-4.1-15.5c-2.2-8.5-10.9-13.6-19.3-11.3L343 298.2 271.2 256l71.9-42.2 79.7 21.7c8.4 2.3 17-2.8 19.3-11.3l4.1-15.5c2.2-8.5-2.7-17.3-11.1-19.6l-34.1-9.3 39.2-23c7.5-4.4 10.1-14.2 5.8-21.9l-7.9-13.9c-4.3-7.7-14-10.3-21.5-5.9l-39.2 23 9.1-34.7c2.2-8.5-2.7-17.3-11.1-19.6l-15.2-4.1c-8.4-2.3-17 2.8-19.3 11.3l-21.3 81-71.9 42.2v-84.5L306 70.4c6.1-6.2 6.1-16.4 0-22.6l-11.1-11.3c-6.1-6.2-16.1-6.2-22.2 0l-24.9 25.4V16c0-8.8-7-16-15.7-16h-15.7c-8.7 0-15.7 7.2-15.7 16v46.1l-24.9-25.4c-6.1-6.2-16.1-6.2-22.2 0L142.1 48c-6.1 6.2-6.1 16.4 0 22.6l58.3 59.3v84.5l-71.9-42.2-21.3-81c-2.2-8.5-10.9-13.6-19.3-11.3L72.7 84c-8.4 2.3-13.4 11.1-11.1 19.6l9.1 34.7-39.2-23c-7.5-4.4-17.1-1.8-21.5 5.9l-7.9 13.9c-4.3 7.7-1.8 17.4 5.8 21.9l39.2 23-34.1 9.1c-8.4 2.3-13.4 11.1-11.1 19.6L6 224.2c2.2 8.5 10.9 13.6 19.3 11.3l79.7-21.7 71.9 42.2-71.9 42.2-79.7-21.7c-8.4-2.3-17 2.8-19.3 11.3l-4.1 15.5c-2.2 8.5 2.7 17.3 11.1 19.6l34.1 9.3-39.2 23c-7.5 4.4-10.1 14.2-5.8 21.9L10 391c4.3 7.7 14 10.3 21.5 5.9l39.2-23-9.1 34.7c-2.2 8.5 2.7 17.3 11.1 19.6l15.2 4.1c8.4 2.3 17-2.8 19.3-11.3l21.3-81 71.9-42.2v84.5l-58.3 59.3c-6.1 6.2-6.1 16.4 0 22.6l11.1 11.3c6.1 6.2 16.1 6.2 22.2 0l24.9-25.4V496c0 8.8 7 16 15.7 16h15.7c8.7 0 15.7-7.2 15.7-16v-46.1l24.9 25.4c6.1 6.2 16.1 6.2 22.2 0l11.1-11.3c6.1-6.2 6.1-16.4 0-22.6l-58.3-59.3v-84.5l71.9 42.2 21.3 81c2.2 8.5 10.9 13.6 19.3 11.3L375 428c8.4-2.3 13.4-11.1 11.1-19.6l-9.1-34.7 39.2 23c7.5 4.4 17.1 1.8 21.5-5.9l7.9-13.9c4.6-7.5 2.1-17.3-5.5-21.7z"
+                class=""></path>
+            </svg>
+            FRY-ZAR
+          </a>
+        </div>
+
+        <div class="flex-1">
+          <p class="uppercase text-gray-500 md:mb-6">Compañia</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#servicios" class="no-underline hover:underline text-gray-700 hover:text-gray-500">Servicios</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#nosotros" class="no-underline hover:underline text-gray-700 hover:text-gray-500">Nosotros</a>
+            </li>
+            <li class="mt-2 inline-block mr-0 md:block md:mr-0">
+              <a href="#abonos" class="no-underline hover:underline text-gray-700 hover:text-gray-500">Abonos</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase text-gray-500 md:mb-6">Redes Sociales</p>
+          <div
+            class="mb-8 gap-4 md:gap-2 md:order-last md:mb-0 mt-4 flex flex-row  md:flex-col justify-center md:justify-start items-center md:items-start">
+
+            <a href="#" class="text-gray-700 hover:text-gray-500 space-x-2 flex">
+              <svg class="w-10 h-10 md:w-6 md:h-6" fill="#075e54" viewBox="0 0 31 31" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M30.667,14.939c0,8.25-6.74,14.938-15.056,14.938c-2.639,0-5.118-0.675-7.276-1.857L0,30.667l2.717-8.017   c-1.37-2.25-2.159-4.892-2.159-7.712C0.559,6.688,7.297,0,15.613,0C23.928,0.002,30.667,6.689,30.667,14.939z M15.61,2.382   c-6.979,0-12.656,5.634-12.656,12.56c0,2.748,0.896,5.292,2.411,7.362l-1.58,4.663l4.862-1.545c2,1.312,4.393,2.076,6.963,2.076   c6.979,0,12.658-5.633,12.658-12.559C28.27,8.016,22.59,2.382,15.61,2.382z M23.214,18.38c-0.094-0.151-0.34-0.243-0.708-0.427   c-0.367-0.184-2.184-1.069-2.521-1.189c-0.34-0.123-0.586-0.185-0.832,0.182c-0.243,0.367-0.951,1.191-1.168,1.437   c-0.215,0.245-0.43,0.276-0.799,0.095c-0.369-0.186-1.559-0.57-2.969-1.817c-1.097-0.972-1.838-2.169-2.052-2.536   c-0.217-0.366-0.022-0.564,0.161-0.746c0.165-0.165,0.369-0.428,0.554-0.643c0.185-0.213,0.246-0.364,0.369-0.609   c0.121-0.245,0.06-0.458-0.031-0.643c-0.092-0.184-0.829-1.984-1.138-2.717c-0.307-0.732-0.614-0.611-0.83-0.611   c-0.215,0-0.461-0.03-0.707-0.03S9.897,8.215,9.56,8.582s-1.291,1.252-1.291,3.054c0,1.804,1.321,3.543,1.506,3.787   c0.186,0.243,2.554,4.062,6.305,5.528c3.753,1.465,3.753,0.976,4.429,0.914c0.678-0.062,2.184-0.885,2.49-1.739   C23.307,19.268,23.307,18.533,23.214,18.38z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="hidden md:block">WhatsApp</span>
+            </a>
+            <a href="#" class="text-gray-700 hover:text-gray-500 space-x-2 flex">
+              <svg class="w-10 h-10 md:w-6 md:h-6" fill="#3b5998" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="hidden md:block">Facebook</span>
+            </a>
+            <a href="#" class="text-gray-700 hover:text-gray-500 space-x-2 flex">
+              <svg class="w-10 h-10 md:w-6 md:h-6" fill="#ff0084" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="hidden md:block">Instagram</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100 border-t border-gray-200">
+      <div class="container mx-auto py-3 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 JailDev -<a
+            href="https://www.linkedin.com/in/bertydev/" class="text-gray-500  hover:text-gray-800" target="_blank"
+            rel="noopener noreferrer"> @BertyDev</a>
+        </p>
+        <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Todos los
+          derechos reservados</span>
+      </div>
+
+    </div>
+  </footer>
+  <!--Fin Footer-->
+  <script src="./asset/js/scripts.js"></script>
+</body>
+
+</html>

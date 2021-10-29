@@ -1,0 +1,32 @@
+/* scroll suave */
+html{
+    scroll-behavior: smooth;
+    transition: ease-in-out 1s;
+}
+
+/* estilos para el Navbar */
+.nav-link-active {
+    /* inline-block py-2 px-4 text-black font-bold no-underline */
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+#nav-link {
+    /* inline-block text-black no-underline  py-2 px-4 */
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+    padding: 0.5rem 1rem;
+
+}
+#nav-link:hover {
+    /* hover:text-gray-800 hover:text-underline */
+    color: rgb(25, 25, 25);
+    text-decoration: underline;
+}
+/* gradiente para fondos */
+.gradient {
+  background: linear-gradient(90deg, #1853a7 0%, #8eb3ff 100%);
+}

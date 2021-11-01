@@ -3,6 +3,7 @@ var header = document.getElementById("header");
 var navcontent = document.getElementById("nav-content");
 var navaction = document.getElementById("navAction");
 var toToggle = document.querySelectorAll(".toggleColour");
+var navlink = document.getElementById("nav-link");
 // var price = document.getElementById("price");
 
 document.addEventListener("scroll", function () {
@@ -15,20 +16,24 @@ document.addEventListener("scroll", function () {
     navaction.classList.add("gradient");
     navaction.classList.remove("text-gray-800");
     navaction.classList.add("text-white");
+    navlink.classList.remove("nav-link-active");
 
     for (var i = 0; i < toToggle.length; i++) {
       toToggle[i].classList.add("text-blue-800");
       toToggle[i].classList.remove("text-white");
     }
     header.classList.add("shadow");
-    navcontent.classList.remove("bg-gray-100");
+    navcontent.classList.remove("bg-gray-50");
+    navcontent.classList.remove("md:text-white");
     navcontent.classList.add("bg-white");
+    navcontent.classList.add("text-gray-700");
   } else {
     header.classList.remove("bg-white");
     navaction.classList.remove("gradient");
     navaction.classList.add("bg-white");
     navaction.classList.remove("text-white");
     navaction.classList.add("text-gray-800");
+    navlink.classList.add("nav-link-active");
 
     for (var i = 0; i < toToggle.length; i++) {
       toToggle[i].classList.add("text-white");
@@ -37,13 +42,14 @@ document.addEventListener("scroll", function () {
 
     header.classList.remove("shadow");
     navcontent.classList.remove("bg-white");
-    navcontent.classList.add("bg-gray-100");
+    navcontent.classList.add("bg-gray-50");
+    navcontent.classList.add("text-gray-700");
+    navcontent.classList.add("md:text-white");
   }
 });
 
 /*Responsive NAV*/
 var navlinkAll = document.querySelectorAll("#nav-link");
-var navlink = document.getElementById("nav-link");
 var navMenuDiv = document.getElementById("nav-content");
 var navMenu = document.getElementById("nav-toggle");
 document.onclick = check;
@@ -52,7 +58,7 @@ function check(e) {
 
   var target = (e && e.target) || (e && e.srcElement);
 
- // checkLink(target);
+  // checkLink(target);
 
   //Nav Menu hamburger
   if (!checkParent(target, navMenuDiv)) {

@@ -1,5 +1,5 @@
 /* scroll suave */
-html{
+html {
     scroll-behavior: smooth;
     transition: ease-in-out 1s;
 }
@@ -11,22 +11,73 @@ html{
     padding: 0.5rem 1rem;
     text-decoration: none;
     font-weight: bold;
-    color: #000;
 }
+
 #nav-link {
     /* inline-block text-black no-underline  py-2 px-4 */
     display: inline-block;
     text-decoration: none;
-    color: rgb(25, 25, 25);
     padding: 0.5rem 1rem;
-
 }
+
 #nav-link:hover {
     /* hover:text-gray-800 hover:text-underline */
-    color: rgb(25, 25, 25);
     text-decoration: underline;
 }
+
 /* gradiente para fondos */
 .gradient {
-  background: linear-gradient(90deg, #1853a7 0%, #8eb3ff 100%);
+    background: linear-gradient(90deg, #1853a7 0%, #8eb3ff 100%);
+}
+
+/* Float para el boton de contacto */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+.circle::before,
+.circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 2rem;
+    border: 10px solid #25d366;
+    border-radius: 100%;
+    animation: latido linear 3s infinite;
+}
+
+.circle::after {
+    animation-delay: -1.5s;
+}
+
+@keyframes latido {
+    0% {
+        width: 3rem;
+        height: 3rem;
+        border: 0.3rem solid #25d366;
+    }
+
+    100% {
+        width: 5rem;
+        height: 5rem;
+        border: 0.3rem solid transparent;
+    }
 }

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const data = Object.fromEntries(formData.entries());
 
         // 4. La URL de tu API Gateway (¡reemplázala por la tuya!)
-        const apiUrl = 'https://rvmpxr9np8.execute-api.us-east-1.amazonaws.com/send-email ';
+        const apiUrl = 'https://2fl1bfse59.execute-api.us-east-2.amazonaws.com/DEV/enviar-email';
 
         // 5. Enviar los datos usando fetch
         fetch(apiUrl, {

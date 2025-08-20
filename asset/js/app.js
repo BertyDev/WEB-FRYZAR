@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const Email = document.getElementById('email').value;
         // 1. Obtén los datos del formulario
         const formData = {
-            destinatario: 'el_berty@hotmail.com',
-            asunto: 'Consulta Fryzar: ${Email} de ${Usuario}',
+            destinatario: 'el_berty@hotmail.com,fry_zar@yahoo.com.ar,climatizacion.fryzar@gmail.com',
+            asunto: `Consulta Fryzar: ${Email} de ${Usuario}`,
             mensaje: document.getElementById('message').value
         };
         
